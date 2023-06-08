@@ -1,0 +1,22 @@
+/* eslint-disable no-unused-vars */
+import React from 'react'
+
+// eslint-disable-next-line react/prop-types
+function Tag({tags}) {
+  return (
+   <div>
+    <div 
+    style={{
+      borderRedius: '5px',
+      backgroundColor: 'grey',
+    }}
+    >
+      // eslint-disable-next-line react/prop-types
+      {tags && tags.map((ele,index)=><div key={index} >{ele}</div>)
+    }
+    </div>
+   </div>
+  )
+}
+
+export default Tag
